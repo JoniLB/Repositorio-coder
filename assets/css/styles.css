@@ -12,6 +12,7 @@
         --color-primary: #5F7A61;
         --color-secondary: #444941;
         --font-noto: 'Noto Sans JP', sans-serif;
+        --font-roboto: 'Roboto', sans-serif;
         font-size: 62.5%;
         font-family: 'Noto Sans JP', sans-serif;
         scroll-behavior: smooth;

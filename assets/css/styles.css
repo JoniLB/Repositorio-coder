@@ -596,7 +596,59 @@
     .ctext {
         font-size: 1.2rem;
     }
-    /* fin estilos locales.html */
+    
+    .about__article {
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        margin: 4rem auto;
+    }
+    
+    .article__title {
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    
+    .about__content {
+        position: relative;
+        width: 220px;
+        height: 300px;
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        box-shadow: 0 0 5px black;
+    }
+    
+    .about__content::before {
+        content: "";
+        width: 220px;
+        height: 260px;
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    .content--grid {
+        position: relative;
+        grid-column: 3/16;
+        background-color: var(--color-primary);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 5px black;
+    }
+    
+    .content--grid::before {
+        content: "";
+        position: absolute;
+        grid-column: 3/16;
+        width: 100%;
+        height: 260px;
+        bottom: 0;
+        border-radius: 10px;
+        background-color: white;
+    }
+    /* fin estilos about.html */
     /* Estilos locales.html */
     
     .div {

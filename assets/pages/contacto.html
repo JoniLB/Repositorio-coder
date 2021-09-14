@@ -47,26 +47,36 @@
 
     <h1 class="title_gallery">Completa el formulario</h1>
 
-    <form class="form" action="" method="get">
-        <label for="name">Nombre</label>
-        <input class="input" type="name" id="name">
+    <form class="form">
+        <section class="form__section">
+            <h2 class="form__title">Información de contacto</h2>
 
-        <label for="email">Email</label>
-        <input class="input" type="email" id="email">
+            <div class="form__inputs">
 
-        <label for="Referente">Referente:</label>
-        <select class="select" name="Referente" id="">
-            <option selected="true" disabled>Seleccionar</option>
-            <option value="particular">Particular</option>
-            <option value="empresa">Empresa</option>
-        </select>
+                <div class="form__group">
+                    <input type="name" class="form__input" placeholder=" ">
+                    <label class="form__label">Nombre</label>
+                    <span class="form__bar"></span>
+                </div>
 
-        <label for="check">Recibir las últimas noticias <input type="checkbox" name="check" id=""></label>
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder=" ">
+                    <label for="email" class="form__label">Email</label>
+                    <span class="form__bar"></span>
+                </div>
+                <div class="form__group">
+                    <label for="news">Recibir las últimas noticias <input type="checkbox" name="check" id="news"></label>
+                </div>
+
+                <input class="form__input form__input--border" type="submit" value="Enviar formulario">
+                <input class="form__input form__input--border" type="reset" value="Limpiar formulario">
+            </div>
 
 
-        <input class="input__form" type="submit" value="Enviar formulario">
-        <input class="input__form" type="reset" value="Limpiar formulario">
+        </section>
+        <section class="form__img">
 
+        </section>
     </form>
 
     <!-- Inicio footer -->

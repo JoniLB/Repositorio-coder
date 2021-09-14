@@ -529,6 +529,14 @@
         transition: all .4s;
     }
     
+    .form__input:focus+.form__label,
+    .form__input:not(:placeholder-shown)+.form__label {
+        transition: all .4s;
+        color: var(--color-primary);
+        transform: scale(.7) translateY(-62px);
+        transform-origin: top left;
+    }
+    
     .form__input--border {
         border: 2px solid #5F7A61;
     }
@@ -542,6 +550,12 @@
     .form__group label {
         color: var(--color-secondary);
         font-size: 1.3rem;
+    }
+    
+    .form__label {
+        position: absolute;
+        pointer-events: none;
+        transform: translateY(-23px);
     }
     /* fin estilos contact */
     /* Estilos about.html */

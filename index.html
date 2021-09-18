@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -50,20 +51,38 @@
     <!-- Contenido principal -->
     <main>
 
-        <div class="grid__container">
 
-            <div class="grid__title">
-                <h1>Tienda online Fit-diet</h1>
+
+
+        <!-- carrousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-
-            <div class="grid__fig">
-                <img src="./assets/img/cov.jpg" class="grid__img" alt="">
-
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/cov.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/cov2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/cov3.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <div class="grid__text">
-                <p>Una dietética diferente</p>
-            </div>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="grid__title">
+            <h1>Tienda online Fit-diet</h1>
         </div>
 
         <section class="grid__card">
@@ -89,10 +108,10 @@
     <h2 class="title_gallery">Ahora tus comidas pueden ser más livianas y saludables</h2>
 
     <!-- Galeria img -->
-    <section class=" container ">
+    <section class=" container row row-cols-1 row-cols-md-3 g-4">
 
-        <!-- card uno -->
-        <div class="card ">
+        <!-- .card__gr uno -->
+        <div class="card__gr ">
             <figure class="card__figure ">
                 <img src="./assets/img/img1.jpg " class="card__img " alt=" ">
             </figure>
@@ -104,8 +123,8 @@
                 </p>
             </div>
         </div>
-        <!-- card dos -->
-        <div class="card ">
+        <!-- .card__gr dos -->
+        <div class="card__gr ">
             <figure class="card__figure ">
                 <img src="./assets/img/img2.jpg " class="card__img " alt=" ">
             </figure>
@@ -117,8 +136,8 @@
                 </p>
             </div>
         </div>
-        <!-- card tres -->
-        <div class="card ">
+        <!-- .card__gr tres -->
+        <div class="card__gr ">
             <figure class="card__figure ">
                 <img src="./assets/img/img3.jpg " class="card__img " alt=" ">
             </figure>
@@ -131,8 +150,8 @@
             </div>
         </div>
 
-        <!-- card cuatro -->
-        <div class="card ">
+        <!-- .card__gr cuatro -->
+        <div class="card__gr ">
             <figure class="card__figure ">
                 <img src="./assets/img/img4.jpg " class="card__img " alt=" ">
             </figure>
@@ -144,8 +163,8 @@
                 </p>
             </div>
         </div>
-        <!-- card cinco -->
-        <div class="card ">
+        <!-- .card__gr cinco -->
+        <div class="card__gr ">
             <figure class="card__figure ">
                 <img src="./assets/img/img5.jpg " class="card__img " alt=" ">
             </figure>
@@ -157,8 +176,8 @@
                 </p>
             </div>
         </div>
-        <!-- card seis -->
-        <div class="card ">
+        <!-- .card__gr seis -->
+        <div class="card__gr ">
             <figure class="card__figure ">
                 <img src="./assets/img/img6.jpg " class="card__img " alt=" ">
             </figure>
@@ -183,67 +202,67 @@
                 <div class="redes ">
                     <figure class="net "><img src="./assets/img/fb.png " alt="facebook "></figure>
                     <figure class="net ">
-                        <img src="./assets/img/ig.png " instagram ">
-                </figure>
-                <figure class="net "><img src="./assets/img/tt.png " alt="twitter "></figure>
+                        <img src="./assets/img/ig.png ">
+                    </figure>
+                    <figure class="net "><img src="./assets/img/tt.png " alt="twitter "></figure>
                 </div>
                 <div class="redes ">
                     <a href="# ">FB</a>
                     <a href="https://www.instagram.com/coderhouse/ " target="_blank ">IG</a>
                     <a href="# ">TT</a>
                 </div>
-                </div>
-                <!-- logo footer -->
-                <div class="footer__logo ">
-                    <a href="# ">Fitdiet</a>
-                    <p>© Copyright Fitdiet</p>
-                    <p>Todos los derechos reservados</p>
-                </div>
-                <!-- datos de contacto -->
-                <div class="info ">
-                    <table class="footer__title ">
-
-                        <tr>
-                            <td>
-                                <img src="./assets/img/tel.png " class="imgtd " alt=" ">
-                            </td>
-                            <td>
-                                Telefonos:
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>0800-222-4444</td>
-                        </tr>
-                        <tr>
-                            <td>0800-222-4445</td>
-                        </tr>
-                        <tr>
-                            <td>0800-222-4446</td>
-                        </tr>
-                    </table>
-
-                    <table class="footer__title2 ">
-                        <tr>
-                            <td>
-                                <img src="./assets/img/email.png " class="imgtd " alt=" ">
-                            </td>
-                            <td>
-                                consultas@diet-fit.com
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="footer__title2 ">
-                        <tr>
-                            <td>
-                                <img src="./assets/img/ub.png " class="imgtd " alt=" ">
-                            </td>
-                            <td>Buenos Aires - Argentina</td>
-                        </tr>
-                    </table>
-                </div>
             </div>
-        </footer>
-        
+            <!-- logo footer -->
+            <div class="footer__logo ">
+                <a href="# ">Fitdiet</a>
+                <p>© Copyright Fitdiet</p>
+                <p>Todos los derechos reservados</p>
+            </div>
+            <!-- datos de contacto -->
+            <div class="info ">
+                <table class="footer__title ">
+
+                    <tr>
+                        <td>
+                            <img src="./assets/img/tel.png " class="imgtd " alt=" ">
+                        </td>
+                        <td>
+                            Telefonos:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>0800-222-4444</td>
+                    </tr>
+                    <tr>
+                        <td>0800-222-4445</td>
+                    </tr>
+                    <tr>
+                        <td>0800-222-4446</td>
+                    </tr>
+                </table>
+
+                <table class="footer__title2 ">
+                    <tr>
+                        <td>
+                            <img src="./assets/img/email.png " class="imgtd " alt=" ">
+                        </td>
+                        <td>
+                            consultas@diet-fit.com
+                        </td>
+                    </tr>
+                </table>
+                <table class="footer__title2 ">
+                    <tr>
+                        <td>
+                            <img src="./assets/img/ub.png " class="imgtd " alt=" ">
+                        </td>
+                        <td>Buenos Aires - Argentina</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>

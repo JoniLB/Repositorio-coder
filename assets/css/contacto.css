@@ -1,0 +1,124 @@
+/* estilos contact.html */
+.form {
+  display: -ms-grid;
+  display: grid;
+  width: 70%;
+  max-width: 1100px;
+  margin: 3rem auto;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 70px 1fr 70px;
+      grid-template-rows: 70px 1fr 70px;
+}
+
+.form .form__section {
+  z-index: 1;
+  padding: 10px 30px;
+  border-radius: 8px;
+  background: white;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.212);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.212);
+  max-width: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (60px)[6];
+      grid-template-rows: repeat(6, 60px);
+}
+
+.form .form__title {
+  display: inline-block;
+  padding: 0;
+  margin: 30px auto;
+  font-size: 2rem;
+}
+
+.form .form__inputs {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  gap: 1.5rem;
+  height: 100px;
+  margin: 40px auto;
+}
+
+.form .form__img {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  background-image: url(../img/formbg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 20px rgba(0, 0, 0, 0.212);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.212);
+}
+
+.form__input {
+  position: relative;
+  display: block;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 35px;
+  background: none;
+  outline: none;
+  color: var(--color-secondary);
+  font-family: var(--font-roboto);
+  border: none;
+  border-bottom: 1px solid #5F7A61;
+  background: -webkit-gradient(linear, left bottom, left top, from(#5F7A61), to(#5F7A61)) left bottom/100% 0% no-repeat;
+  background: linear-gradient(360deg, #5F7A61, #5F7A61) left bottom/100% 0% no-repeat;
+  -webkit-transform: background scaleX(0);
+          transform: background scaleX(0);
+}
+
+.form__input:focus {
+  background: -webkit-gradient(linear, left bottom, left top, from(#5F7A61), to(#5F7A61)) left bottom/100% 5% no-repeat;
+  background: linear-gradient(360deg, #5F7A61, #5F7A61) left bottom/100% 5% no-repeat;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.form__input:focus + .form__label,
+.form__input .form__input:not(:placeholder-shown) + .form__label {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: var(--color-primary);
+  -webkit-transform: scale(0.7) translateY(-62px);
+          transform: scale(0.7) translateY(-62px);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.form__input--border {
+  border: 2px solid #5F7A61;
+}
+
+.form__input--border:hover {
+  background: var(--color-secondary);
+  color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.form__group label {
+  color: var(--color-secondary);
+  font-size: 1.3rem;
+}
+
+.form__group .form__label {
+  position: absolute;
+  pointer-events: none;
+  -webkit-transform: translateY(-23px);
+          transform: translateY(-23px);
+}
+
+/* fin estilos contact */
+/*# sourceMappingURL=contacto.css.map */

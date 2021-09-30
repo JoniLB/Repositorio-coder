@@ -1,0 +1,106 @@
+/* estilos contact.html */
+    
+.form {
+    display: grid;
+    width: 70%;
+    max-width: 1100px;
+    margin: 3rem auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 70px 1fr 70px;
+
+    .form__section {
+        z-index: 1;
+        padding: 10px 30px;
+        border-radius: 8px;
+        background: white;
+        grid-column: 2/5;
+        grid-row: 2/3;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.212);
+        max-width: 400px;
+        display: grid;
+        grid-template-rows: repeat(6, 60px);
+    }
+
+    .form__title {
+        display: inline-block;
+        padding: 0;
+        margin: 30px auto;
+        font-size: 2rem;
+    }
+
+    .form__inputs {
+    display: grid;
+    width: 100%;
+    gap: 1.5rem;
+    height: 100px;
+    margin: 40px auto;
+    }   
+    
+    .form__img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    background-image: url(../img/formbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.212);
+}
+
+}
+
+.form__input {
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 35px;
+    background: none;
+    outline: none;
+    color: var(--color-secondary);
+    font-family: var(--font-roboto);
+    border: none;
+    border-bottom: 1px solid #5F7A61;
+    background: linear-gradient(360deg, #5F7A61, #5F7A61) left bottom /100% 0% no-repeat;
+    transform: background scaleX(0);
+
+    &:focus {
+        background: linear-gradient(360deg, #5F7A61, #5F7A61) left bottom /100% 5% no-repeat;
+        transform-origin: left bottom;
+        transition: all .4s;
+    }
+
+    &:focus+.form__label,
+    .form__input:not(:placeholder-shown)+.form__label {
+    transition: all .4s;
+    color: var(--color-primary);
+    transform: scale(.7) translateY(-62px);
+    transform-origin: top left;
+    }
+}
+
+.form__input--border {
+    border: 2px solid #5F7A61;
+
+    &:hover {
+        background: var(--color-secondary);
+        color: white;
+        transition: .4s;
+    }
+}
+
+
+.form__group{
+
+    label {
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+    }
+
+    .form__label {
+        position: absolute;
+        pointer-events: none;
+        transform: translateY(-23px);
+    }
+}
+/* fin estilos contact */

@@ -2,11 +2,15 @@
     
 .form {
     display: grid;
-    width: 70%;
-    max-width: 1100px;
+    width: 100% - (2*15%);
     margin: 3rem auto;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 70px 1fr 70px;
+
+    if(width > 1100px){
+        
+        width: 70vw;
+    }
 
     .form__section {
         z-index: 1;

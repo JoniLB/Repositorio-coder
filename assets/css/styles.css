@@ -1039,7 +1039,7 @@ td {
     font-size: 2.2rem;
   }
   /* form */
-  .form {
+  /* .form {
     -ms-grid-columns: (1fr)[10];
         grid-template-columns: repeat(10, 1fr);
     width: 300px;
@@ -1050,7 +1050,7 @@ td {
     -ms-grid-column: 2;
     -ms-grid-column-span: 8;
     grid-column: 2/10;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
